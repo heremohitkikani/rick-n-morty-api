@@ -1,0 +1,37 @@
+div .loader {
+  width: 50px !important;
+  height: 50px;
+  border-radius: 50% !important;
+  display: inline-block;
+  position: relative;
+  border: 2px solid #FF3D00;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  background-color: transparent !important;
+  margin: auto ;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border: 2px solid #FFF;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+    
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+/* ======================dfd============ */
+.search{
+  margin: 50px 0 !important;
+  /* width: 400px; */
+}
